@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(245, 232, 198);
+}
+
+p {
+  margin: 0;
+}
+
+#header {
+  font-size: 70px;
+  text-align: center;
+  color: rgb(250, 121, 143);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+#startImage {
+ width: 500px;
+ height: auto;
+ border-color: rgb(245, 232, 198);
+ margin-bottom: 10px;
+}
+
+#startImage2 {
+ width: 500px;
+ height: 500px;
+ border-color: rgb(245, 232, 198);
+ margin-bottom: 10px;
+ justify-items: center;
+}
+
+#imgContainer {
+  display: flexbox;
+  justify-self: center;
+}
+
+#btnsContainer {
+  display: flexbox;
+  justify-self: center;
+  position: absolute;
+}
+
+#yesBtn {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(250, 121, 143);
+  border: none;
+  border-radius: 10px;
+  font-size: 70px;
+  color: white;
+  margin-right: 100px;
+  z-index: 0;
+  position: relative;
+}
+
+
+
+#noBtn {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(250, 121, 143);
+  border: none;
+  border-radius: 10px;
+  font-size: 70px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+#yesBtn, #noBtn {
+}
+
+#yesBtn:hover, #noBtn:hover, #messageBtn:hover {
+  opacity: 0.7;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+#messageBtn {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(250, 121, 143);
+  border: none;
+  border-radius: 10px;
+  font-size: 45px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  right: 45%;
+  top: 67%;
+}
+
+@media (max-width: 768px) {
+  #startImage, #startImage2  {
+    width: 320px;
+    height: 320px;
+    margin: 5px;
+  }
+
+  #yesBtn {
+   margin-right: 80px;
+  }
+
+  #yesBtn, #noBtn {
+    width: 120px;
+    height: 60px;
+    font-size: 50px;
+  }
+
+  p {
+    overflow-wrap: break-word;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #header{
+    font-size: 50px;
+    width: 310px;
+  }
+
+  #messageBtn {
+    top: 80%;
+    right: 30%;
+}
+}
